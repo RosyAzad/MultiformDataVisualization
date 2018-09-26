@@ -6,7 +6,7 @@
     "data": [
       {
         "name": "losses",
-        "url": "https://raw.githubusercontent.com/RosyAzad/MultiformVisualization/master/losses2015_transformed.csv",
+        "url": "https://raw.githubusercontent.com/RosyAzad/MultiformDataVisualization/master/losses2015_transformed.csv",
         "format": {"type": "csv", "parse": "auto"},
         "transform": [{
     "type": "aggregate",
@@ -18,7 +18,7 @@
       },
       {
         "name": "states",
-        "url": "https://raw.githubusercontent.com/RosyAzad/MultiformVisualization/master/us-10m.json",
+        "url": "https://raw.githubusercontent.com/RosyAzad/MultiformDataVisualization/master/us-10m.json",
         "format": {"type": "topojson", "feature": "states"},
         "transform": [
           { "type": "lookup", "from": "losses", "key": "State_Code", "fields": ["id"], "values": ["State_Code","Amount","State_Abv"] },

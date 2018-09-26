@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega 4 & Vega-Lite 2 (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@2"></script>
+  <!-- Import vega-embed -->
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@3"></script>
+  <style>
+      canvas{width : 700px};
+  </style>
+</head>
+<body>
+
+    <div  style="float:left;" id="vis1"></div>
+    <div style="float:right;" id="vis2"></div>
+
+<script type="text/javascript">
+  var spec1 = "https://raw.githubusercontent.com/RosyAzad/MultiformDataVisualization/master/barchart.json";
+  var spec2 = "https://raw.githubusercontent.com/RosyAzad/MultiformDataVisualization/master/choropleth.json";
+  vegaEmbed('#vis1', spec1).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+  vegaEmbed('#vis2', spec2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+
+</script>
+</body>
+</html>

@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
     "description": "A bar chart showing the losses in millions for the depending on the damage caused",
     "width": 1000,
-    "data": { "url": "https://raw.githubusercontent.com/RosyAzad/MultiformVisualization/master/losses2015_transformed.csv"},
+    "data": { "url": "https://raw.githubusercontent.com/RosyAzad/MultiformDataVisualization/master/losses2015_transformed.csv"},
     "mark": "bar",
     "encoding": {
       "y": {
